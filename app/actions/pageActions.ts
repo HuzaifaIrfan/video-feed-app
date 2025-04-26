@@ -1,7 +1,13 @@
 "use server";
 
-import {pagesCollection , getDb , client} from "@/lib/mongodb";
+import { pagesCollection, getDb, client } from "@/lib/mongodb";
 import { checkPassword } from "./checkPassword";
+
+interface Page {
+  title: string;
+  url: string;
+  created_at: Date;
+}
 
 export async function addPage({
   title,
@@ -22,13 +28,16 @@ export async function addPage({
   // Insert into MongoDB
   try {
     await getDb();
-   
 
-    const result = await pagesCollection.insertOne({
-      title,
-      url,
-      created_at: new Date(),
-    });
+
+    const jsonData = {
+      "title":title,
+      "url":url,
+      "created_at": new Date(),
+    }
+
+
+    const result = await pagesCollection.insertOne(jsonData);
 
     return { success: true, id: result.insertedId };
   } catch (error) {

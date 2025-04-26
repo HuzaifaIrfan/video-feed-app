@@ -1,49 +1,48 @@
-import { Collection, Db, MongoClient } from "mongodb";
+const MONGODB_URI = process.env.MONGODB_URI || "=mongodb://localhost:27017/";
 
-const uri = process.env.MONGODB_URI as string;
-const options = {};
+console.log("MONGODB_URI: ", MONGODB_URI);
 
-let client: MongoClient;
-let clientPromise: Promise<MongoClient>;
+const DATABASE = process.env.DATABASE || "video_feed_crawler";
 
-if (!process.env.MONGODB_URI) {
-  throw new Error("Add MONGODB_URI to .env.local");
-}
+console.log("DATABASE: ", DATABASE);
 
-declare global {
-  var _mongoClientPromise: Promise<MongoClient>;
-}
+// MongoDB connection string
+const MONGO_URI = MONGODB_URI + DATABASE; // Replace with your MongoDB connection string
 
-if (process.env.NODE_ENV === "development") {
-  if (!global._mongoClientPromise) {
-    client = new MongoClient(uri, options);
-    global._mongoClientPromise = client.connect();
+import mongoose from "mongoose";
+
+
+const cached: { connection?: typeof mongoose; promise?: Promise<typeof mongoose> } = {};  
+
+export async function connectToDatabase() {  
+    if (!MONGO_URI) {  
+        throw new Error('Please define the MONGO_URI environment variable inside .env.local');  
+    }  
+    if (cached.connection) {  
+        return cached.connection;  
+    }  
+    if (!cached.promise) {  
+        const opts = {  
+            bufferCommands: false,  
+        };  
+        cached.promise = mongoose.connect(MONGO_URI, opts);  
+    }  
+    try {  
+        cached.connection = await cached.promise;  
+    } catch (e) {  
+        cached.promise = undefined;  
+        throw e;  
+    }  
+    return cached.connection;  
+}  
+
+// Function to disconnect from the database
+export async function disconnectFromDatabase() {
+    if (cached.connection) {
+      await mongoose.disconnect();
+      cached.connection;
+      console.log("MongoDB connection closed.");
+    } else {
+      console.log("No active MongoDB connection to close.");
+    }
   }
-  clientPromise = global._mongoClientPromise;
-} else {
-  client = new MongoClient(uri, options);
-  clientPromise = client.connect();
-}
-
-let db: Db;
-let videosCollection: Collection<Document>
-let pagesCollection: Collection<Document>
-
-
-const initDb = async () => {
-  client = await clientPromise;
-  db = client.db('video_feed_crawler');  // Database name
-  videosCollection = db.collection('videos'); // Videos collection
-  pagesCollection = db.collection('pages');  // Pages collection
-};
-
-// Ensure the DB is initialized before accessing
-const getDb = async () => {
-  if (!db) {
-    await initDb();  // Initialize DB if not done already
-  }
-  return db;
-};
-
-
-export { videosCollection, pagesCollection, getDb, client};

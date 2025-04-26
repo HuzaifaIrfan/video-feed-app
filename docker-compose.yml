@@ -1,33 +1,35 @@
 services:
   video_feed_app:
-    container_name: video_feed_app-dev
+    container_name: video_feed_app
     build:
       context: .
       dockerfile: dockerfile
       tags:
-        - "localhost:5000/video_feed_app-dev:0.1"
+        - "ghcr.io/huzaifairfan/video_feed_app:0.1"
+        
+    image: "ghcr.io/huzaifairfan/video_feed_app:0.1"
 
     environment:
       - MONGODB_URI=mongodb://mongodb:27017/
       - DATABASE=video_feed_crawler
       - ADMIN_PASSWORD=aa
       
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
-      
-    command: /bin/sh -c "while sleep 1000; do :; done"
-    
+    command: npm run start
+
+    restart: unless-stopped
+
     depends_on:
       - mongodb
 
   mongodb:
-    container_name: mongodb-app-dev
+    container_name: mongodb
     image: mongo:8-noble
     ports:
       - '27017:27017'
     volumes:
       - mongodb:/data/db
     restart: unless-stopped 
+
 
 volumes:
   mongodb:
