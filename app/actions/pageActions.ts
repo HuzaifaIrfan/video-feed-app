@@ -83,7 +83,7 @@ export async function getPages() {
     };
   } catch (error) {
     console.error("Error fetching pages:", error);
-    return { success: false }; // Return failure if an error occurs
+    return { success: false,pages:[]}; // Return failure if an error occurs
   }
 }
 
