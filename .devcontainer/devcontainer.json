@@ -1,0 +1,28 @@
+{
+	"name": "video_feed_app-dev",
+
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "video_feed_app",
+
+	"workspaceFolder": "/workspace",
+	"shutdownAction": "stopCompose",
+
+	"mounts": [
+		"source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+	],
+
+
+	"postCreateCommand": "npm install",
+	"postStartCommand": "npm run dev",
+	
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"extensions": [
+			]
+		}
+	},
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "vscode",
+	// "containerUser": "vscode"
+}
