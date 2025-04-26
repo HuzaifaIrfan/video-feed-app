@@ -1,43 +1,25 @@
-import { createPost, getPosts } from "./actions/postActions";
+import { getVideos } from "./actions/videoActions";
 
 export default async function HomePage() {
-  const posts = await getPosts();
+  const videos = await getVideos();
 
-  async function handleAddPost(formData: FormData) {
-    "use server";
-
-    const title = formData.get("title") as string;
-    const content = formData.get("content") as string;
-
-    await createPost(title, content);
-  }
 
   return (
     <main className="p-8">
-      <h1 className="text-2xl mb-4">Posts</h1>
+      <h1 className="text-2xl mb-4">Videos</h1>
 
-      <form action={handleAddPost} className="mb-8">
-        <input
-          name="title"
-          placeholder="Title"
-          className="border p-2 mr-2"
-          required
-        />
-        <input
-          name="content"
-          placeholder="Content"
-          className="border p-2 mr-2"
-          required
-        />
-        <button type="submit" className="bg-blue-500 text-white p-2">
-          Add Post
-        </button>
-      </form>
 
-      <ul>
-        {posts.map((post: any) => (
-          <li key={post._id.toString()}>
-            <strong>{post.title}</strong>: {post.content}
+      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        {videos.map((video: any) => (
+          <li key={video._id.toString()} className="border rounded-lg p-4 shadow hover:shadow-md transition">
+            <iframe width="100%" height="auto"
+              src={"https://www.youtube.com/embed/" + video._id.toString()} 
+              title="YouTube video player" 
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerPolicy="strict-origin-when-cross-origin" 
+              allowFullScreen>
+            </iframe>
           </li>
         ))}
       </ul>
