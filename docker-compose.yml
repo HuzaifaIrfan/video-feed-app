@@ -13,8 +13,11 @@ services:
       - MONGODB_URI=mongodb://mongodb:27017/
       - DATABASE=video_feed_crawler
       - ADMIN_PASSWORD=aa
-      
-    command: npm run start
+
+    ports:
+      - '3000:3000' 
+
+    command: npm run start -- -p 3000
 
     restart: unless-stopped
 
