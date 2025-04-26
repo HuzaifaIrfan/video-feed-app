@@ -1,4 +1,4 @@
-import { MongoClient } from "mongodb";
+import { Collection, Db, MongoClient } from "mongodb";
 
 const uri = process.env.MONGODB_URI as string;
 const options = {};
@@ -25,4 +25,25 @@ if (process.env.NODE_ENV === "development") {
   clientPromise = client.connect();
 }
 
-export default clientPromise;
+let db: Db;
+let videosCollection: Collection<Document>
+let pagesCollection: Collection<Document>
+
+
+const initDb = async () => {
+  client = await clientPromise;
+  db = client.db('video_feed_crawler');  // Database name
+  videosCollection = db.collection('videos'); // Videos collection
+  pagesCollection = db.collection('pages');  // Pages collection
+};
+
+// Ensure the DB is initialized before accessing
+const getDb = async () => {
+  if (!db) {
+    await initDb();  // Initialize DB if not done already
+  }
+  return db;
+};
+
+
+export { videosCollection, pagesCollection, getDb, client};

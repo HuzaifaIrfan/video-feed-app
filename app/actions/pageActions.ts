@@ -1,6 +1,6 @@
 "use server";
 
-import clientPromise from "@/lib/mongodb";
+import {pagesCollection , getDb , client} from "@/lib/mongodb";
 import { checkPassword } from "./checkPassword";
 
 export async function addPage({
@@ -21,11 +21,10 @@ export async function addPage({
 
   // Insert into MongoDB
   try {
-    const client = await clientPromise;
-    const db = client.db("video_feed_crawler"); // your DB
-    const pages = db.collection("pages"); // using 'pages' collection now
+    await getDb();
+   
 
-    const result = await pages.insertOne({
+    const result = await pagesCollection.insertOne({
       title,
       url,
       created_at: new Date(),
@@ -42,11 +41,9 @@ export async function addPage({
 
 export async function getPages() {
   try {
-    const client = await clientPromise;
-    const db = client.db("video_feed_crawler");
-    const pages = db.collection("pages");
 
-    const results = await pages.find({}).sort({ created_at: -1 }).toArray();
+    await getDb();
+    const results = await pagesCollection.find({}).sort({ created_at: -1 }).toArray();
 
     return {
       success: true,
@@ -69,11 +66,8 @@ export async function deletePage({ id, password }: { id: string; password: strin
   }
 
   try {
-    const client = await clientPromise;
-    const db = client.db("video_feed_crawler");
-    const pages = db.collection("pages");
-
-    await pages.deleteOne({ _id: new (require("mongodb")).ObjectId(id) });
+    await getDb();
+    await pagesCollection.deleteOne({ _id: new (require("mongodb")).ObjectId(id) });
 
     return { success: true };
   } catch (error) {

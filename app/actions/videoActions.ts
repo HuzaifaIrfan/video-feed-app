@@ -1,15 +1,14 @@
 "use server";
 
-import clientPromise from "@/lib/mongodb";
+
+import {videosCollection , getDb , client} from "@/lib/mongodb";
 import { ObjectId } from "mongodb";
 
 export async function getVideos(lastCreatedAt?: string) {
 
-  // console.log(lastCreatedAt)
+  await getDb()
 
-  const client = await clientPromise;
-  const db = client.db("video_feed_crawler");
-  const videosCollection = db.collection("videos");
+  // console.log(lastCreatedAt)
 
   let query = {};
   if (lastCreatedAt) {

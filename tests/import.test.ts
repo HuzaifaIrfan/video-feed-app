@@ -1,4 +1,4 @@
-import clientPromise from "../lib/mongodb";
+import {pagesCollection, videosCollection , getDb , client} from "../lib/mongodb";
 import { Collection, Db, Document, MongoClient, ObjectId } from 'mongodb';
 
 
@@ -54,16 +54,9 @@ export function convertJsonToVideoEntry(raw: any): VideoEntry {
   };
 }
 
-let client: MongoClient;
-let db: Db;
-let videosCollection: Collection<Document>
-let pagesCollection: Collection<Document>
 
 beforeAll(async () => {
-  client = await clientPromise;
-  db = client.db("video_feed_crawler");
-  videosCollection = db.collection("videos");
-  pagesCollection = db.collection("pages");
+await getDb();
 });
 
 afterAll(async () => {
