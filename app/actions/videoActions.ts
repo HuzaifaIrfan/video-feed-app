@@ -5,7 +5,7 @@ import { ObjectId } from "mongodb";
 
 export async function getVideos(lastCreatedAt?: string) {
 
-  console.log(lastCreatedAt)
+  // console.log(lastCreatedAt)
 
   const client = await clientPromise;
   const db = client.db("video_feed_crawler");

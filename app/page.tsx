@@ -26,34 +26,38 @@ export default function HomePage() {
   };
 
   useEffect(() => {
-    loadMore(); // Load first videos
+    loadMore(); // Load first 10 videos
   }, []);
 
   useEffect(() => {
+    if (!loaderRef.current) return;
+
     const observer = new IntersectionObserver(
       (entries) => {
-        if (entries[0].isIntersecting) {
+        const firstEntry = entries[0];
+        if (firstEntry.isIntersecting) {
           loadMore();
         }
       },
       { rootMargin: "100px" }
     );
 
-    if (loaderRef.current) {
-      observer.observe(loaderRef.current);
-    }
+    const currentLoader = loaderRef.current;
+    observer.observe(currentLoader);
 
     return () => {
-      if (loaderRef.current) {
-        observer.unobserve(loaderRef.current);
+      if (currentLoader) {
+        observer.unobserve(currentLoader);
       }
     };
-  }, [loaderRef.current]);
+  }, [loaderRef.current, loading, hasMore]); // <-- add deps carefully
+
 
   return (
-    <main className="p-8">
-      <h1 className="text-2xl mb-4">Videos</h1>
-
+    <main className="py-12">
+      {/* CONTAINER */}
+      <div className="max-w-6xl mx-auto px-4">
+        <h1 className="text-3xl font-bold mb-8 text-center">Video Feed</h1>
 
       <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {videos.map((video: any) => (
@@ -70,11 +74,10 @@ export default function HomePage() {
         ))}
       </ul>
 
-
       {/* Invisible loader div */}
       {hasMore && <div ref={loaderRef} className="h-10"></div>}
 
-      {/* Load More button */}
+      {/* Load More Button */}
       <div className="flex justify-center mt-8">
         {hasMore ? (
           <button
@@ -87,6 +90,7 @@ export default function HomePage() {
         ) : (
           <p className="text-gray-500">No more videos.</p>
         )}
+      </div>
       </div>
     </main>
   );
