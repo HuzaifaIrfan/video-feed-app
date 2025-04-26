@@ -1,51 +1,11 @@
 [{
-  "_id": "K9anz4aB0S0",
-  "title": "What is CUDA? - Computerphile",
-  "img": "https://i.ytimg.com/vi/K9anz4aB0S0/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLB7LlM6PbCjVi-Fu5uEO_GuWjf1uQ",
-  "site": 0,
-  "cat": 0,
-  "created_at": {
-    "$date": "2025-04-26T11:48:20.338Z"
-  }
-},
-{
-  "_id": "1fFO27FPM9A",
-  "title": "Shortest Path Algorithm Problem - Computerphile",
-  "img": "https://i.ytimg.com/vi/1fFO27FPM9A/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLA0YGKMIT6K1U333B7fElT2W_zPSQ",
-  "site": 0,
-  "cat": 0,
-  "created_at": {
-    "$date": "2025-04-26T11:48:20.339Z"
-  }
-},
-{
-  "_id": "R8MI8vsrFiQ",
-  "title": "Reputation Lag Attack - Computerphile",
-  "img": "https://i.ytimg.com/vi/R8MI8vsrFiQ/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCqhhnneWjmLLlApNEYPq_I1w4a9A",
-  "site": 0,
-  "cat": 0,
-  "created_at": {
-    "$date": "2025-04-26T11:48:20.340Z"
-  }
-},
-{
-  "_id": "AqJnK9Dh-eQ",
-  "title": "Ai Will Try to Cheat & Escape (aka Rob Miles was Right!) - Computerphile",
-  "img": "https://i.ytimg.com/vi/AqJnK9Dh-eQ/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCfqOz2--nD7JKkuJTapAhdwIbNyw",
-  "site": 0,
-  "cat": 0,
-  "created_at": {
-    "$date": "2025-04-26T11:48:20.341Z"
-  }
-},
-{
   "_id": "iV5fajdpb7c",
   "title": "Network Routing Crash Course",
   "img": "https://i.ytimg.com/vi/iV5fajdpb7c/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDFVQDDEPo0lDvn-VGuxSe1K_QVgA",
   "site": 0,
   "cat": 0,
   "created_at": {
-    "$date": "2025-04-26T11:48:25.553Z"
+    "$date": "2025-04-26T16:59:59.465Z"
   }
 },
 {
@@ -55,7 +15,7 @@
   "site": 0,
   "cat": 0,
   "created_at": {
-    "$date": "2025-04-26T11:48:25.554Z"
+    "$date": "2025-04-26T16:59:59.466Z"
   }
 },
 {
@@ -65,7 +25,7 @@
   "site": 0,
   "cat": 0,
   "created_at": {
-    "$date": "2025-04-26T11:48:25.555Z"
+    "$date": "2025-04-26T16:59:59.466Z"
   }
 },
 {
@@ -75,6 +35,326 @@
   "site": 0,
   "cat": 0,
   "created_at": {
-    "$date": "2025-04-26T11:48:25.556Z"
+    "$date": "2025-04-26T16:59:59.467Z"
+  }
+},
+{
+  "_id": "LnVkwuwL7LU",
+  "title": "OpenAI social network, Anthropic’s reasoning study and humanoid half-marathon",
+  "img": "https://i9.ytimg.com/vi/LnVkwuwL7LU/hqdefault_custom_2.jpg?sqp=CJCitMAG-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBiJ2fYw0s1C1J9Vf27grYz1eSscA",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:05.414Z"
+  }
+},
+{
+  "_id": "vKPGZHoHX8k",
+  "title": "How Hackers Steal Passwords: 5 Attack Methods Explained",
+  "img": "https://i.ytimg.com/vi/vKPGZHoHX8k/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLB6rEXK6y_lHTBvUTZ0ogVsPgm_bA",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:05.415Z"
+  }
+},
+{
+  "_id": "X3XJeTApVMM",
+  "title": "What Are Orchestrator Agents? AI Tools Working Smarter Together",
+  "img": "https://i9.ytimg.com/vi/X3XJeTApVMM/hqdefault_custom_2.jpg?sqp=CJCitMAG-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBPwnjNrnaFrTkRX5D79-RNrOpOKQ",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:05.415Z"
+  }
+},
+{
+  "_id": "pYK4No7ACRE",
+  "title": "Master NoSQL: Scalable Databases for Modern Applications",
+  "img": "https://i9.ytimg.com/vi/pYK4No7ACRE/hqdefault_custom_2.jpg?sqp=CJCitMAG-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDwrPapqQxa5-4mE-ouDZKBFNbaPw",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:05.415Z"
+  }
+},
+{
+  "_id": "K9anz4aB0S0",
+  "title": "What is CUDA? - Computerphile",
+  "img": "https://i.ytimg.com/vi/K9anz4aB0S0/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLB7LlM6PbCjVi-Fu5uEO_GuWjf1uQ",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:11.294Z"
+  }
+},
+{
+  "_id": "1fFO27FPM9A",
+  "title": "Shortest Path Algorithm Problem - Computerphile",
+  "img": "https://i.ytimg.com/vi/1fFO27FPM9A/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLA0YGKMIT6K1U333B7fElT2W_zPSQ",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:11.295Z"
+  }
+},
+{
+  "_id": "R8MI8vsrFiQ",
+  "title": "Reputation Lag Attack - Computerphile",
+  "img": "https://i.ytimg.com/vi/R8MI8vsrFiQ/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCqhhnneWjmLLlApNEYPq_I1w4a9A",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:11.295Z"
+  }
+},
+{
+  "_id": "AqJnK9Dh-eQ",
+  "title": "Ai Will Try to Cheat & Escape (aka Rob Miles was Right!) - Computerphile",
+  "img": "https://i.ytimg.com/vi/AqJnK9Dh-eQ/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCfqOz2--nD7JKkuJTapAhdwIbNyw",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:11.296Z"
+  }
+},
+{
+  "_id": "CLh2ACdXNbc",
+  "title": "13 Linux Commands Every Engineer Should Know (Real-World Example)",
+  "img": "https://i.ytimg.com/vi/CLh2ACdXNbc/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLB1_I1uwmeOre-wCIwRWVzYVmUPVw",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:16.894Z"
+  }
+},
+{
+  "_id": "116elYvjJ1M",
+  "title": "Most Detailed DevOps Roadmap | Weekly Breakdown",
+  "img": "https://i.ytimg.com/vi/116elYvjJ1M/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAmg4lRc1_hdbqnwi805fs0wJBSNQ",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:16.895Z"
+  }
+},
+{
+  "_id": "QkdkLdMBuL0",
+  "title": "Kafka Tutorial for Beginners | Everything you need to get started",
+  "img": "https://i.ytimg.com/vi/QkdkLdMBuL0/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLByd4GkQ723r-_9yEjKm6BPUGSzAQ",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:16.896Z"
+  }
+},
+{
+  "_id": "klyAhaklGNU",
+  "title": "HashiCorp Vault Tutorial for Beginners - What, Why and How",
+  "img": "https://i.ytimg.com/vi/klyAhaklGNU/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAVsxMWcnd6vZO23YsixIGjXY2d9Q",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:16.896Z"
+  }
+},
+{
+  "_id": "O-Vu-DMIU40",
+  "title": "OpenAI launches \"genius\" o4 model with a programming CLI tool...",
+  "img": "https://i.ytimg.com/vi/O-Vu-DMIU40/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLD6P6kC1JSGghxuZANqZtWuge0i9Q",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:22.941Z"
+  }
+},
+{
+  "_id": "XNratwOrSiY",
+  "title": "4chan penetrated by a gang of soyjaks…",
+  "img": "https://i.ytimg.com/vi/XNratwOrSiY/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDMR2VRbPn0Ru5Sr8HhlaznoBdSag",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:22.941Z"
+  }
+},
+{
+  "_id": "P4M9wfJH-yI",
+  "title": "Meta’s Llama 4 is mindblowing… but did it cheat?",
+  "img": "https://i.ytimg.com/vi/P4M9wfJH-yI/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLANpQvlYRkaygHMZRD5bXLEZC_iSg",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:22.942Z"
+  }
+},
+{
+  "_id": "LjbNtw14TwI",
+  "title": "Respected computer scientist mysteriously disappears...",
+  "img": "https://i.ytimg.com/vi/LjbNtw14TwI/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAqg1JS3zoCvUzDgP7Wgi4zUJMORw",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:22.943Z"
+  }
+},
+{
+  "_id": "jeCDCbqqmes",
+  "title": "THIS Is How You ACTUALLY Use AI For Programming",
+  "img": "https://i.ytimg.com/vi/jeCDCbqqmes/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBiGz2EHt_g2vFhlmP7tqE7vW3S8Q",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:33.253Z"
+  }
+},
+{
+  "_id": "tIdWQC6Crlc",
+  "title": "How To Remember EVERYTHING You Study",
+  "img": "https://i.ytimg.com/vi/tIdWQC6Crlc/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAXzUZqieTcSLFvt13jgasjI4q68g",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:33.254Z"
+  }
+},
+{
+  "_id": "Z_Z_PKUTLno",
+  "title": "Using My Programming Skills To Rot Your Brain",
+  "img": "https://i9.ytimg.com/vi/Z_Z_PKUTLno/hqdefault_custom_3.jpg?sqp=CJCitMAG-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC7T-T7p4SfDhsV5riDr5ReRhmSUg",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:33.255Z"
+  }
+},
+{
+  "_id": "VQgKSLkUNvQ",
+  "title": "Things I ABSOLUTELY Hate About Programming",
+  "img": "https://i.ytimg.com/vi/VQgKSLkUNvQ/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC1bU7kNF7aza58EvIfiyxB-SWZEA",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:33.255Z"
+  }
+},
+{
+  "_id": "8eXiWkPSb50",
+  "title": "Simple Made Easy - Prime Reacts",
+  "img": "https://i.ytimg.com/vi/8eXiWkPSb50/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBhGcmm6L5FeIysL9DpcwNUfUvmzw",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:37.846Z"
+  }
+},
+{
+  "_id": "U76TSJ7ONzM",
+  "title": "Thanks Obama, Al Codes Better Than Most Developers",
+  "img": "https://i.ytimg.com/vi/U76TSJ7ONzM/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCmrOgfqF5KJkiY6jTq8zwcrvDfXg",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:37.847Z"
+  }
+},
+{
+  "_id": "GAxYR2P3v7s",
+  "title": "Ex-Google CEO: AI Is Slipping Out of Control",
+  "img": "https://i.ytimg.com/vi/GAxYR2P3v7s/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLADXGlb3jQ_6ripDJdJ-DDjvg-2xQ",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:37.847Z"
+  }
+},
+{
+  "_id": "5La12L8g1Ys",
+  "title": "The Best Programmers I Know - Prime Reacts",
+  "img": "https://i.ytimg.com/vi/5La12L8g1Ys/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLA1f8ucXuWFhGTn2cx39W6wXr7gng",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:37.848Z"
+  }
+},
+{
+  "_id": "OrGg-c6yM-I",
+  "title": "7 Essential Apps for ANY Kubernetes Cluster",
+  "img": "https://i.ytimg.com/vi/OrGg-c6yM-I/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBELEsNCN3f8tv7l9Obb1DB9x3s3A",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:44.985Z"
+  }
+},
+{
+  "_id": "RTjRViBJrC8",
+  "title": "We're all WRONG about Tech certifications",
+  "img": "https://i.ytimg.com/vi/RTjRViBJrC8/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCu-XTQCV3jMgRiN3NT_G9Vf28hyA",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:44.986Z"
+  }
+},
+{
+  "_id": "Msdslr5m3B8",
+  "title": "LLMs in Tech Interviews? Here’s Why It Might Happen",
+  "img": "https://i.ytimg.com/vi/Msdslr5m3B8/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCgt8IPhOZxECw6evNgVTp_YDnpVQ",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:44.986Z"
+  }
+},
+{
+  "_id": "64TECXZiFb0",
+  "title": "5 Warp Terminal Features That Will Transform Your Kubernetes Workflow",
+  "img": "https://i.ytimg.com/vi/64TECXZiFb0/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLB4bKuXWZQC1L-xXC94CdZNtkoWOA",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:44.986Z"
+  }
+},
+{
+  "_id": "6WYBvbn-mgQ",
+  "title": "Can This Tiny Board Replace Your Entire HomeLab? – Zima Board 2",
+  "img": "https://i.ytimg.com/vi/6WYBvbn-mgQ/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLD0a8Z0FsXj6bqPGS1o4zIgwryjSw",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:51.543Z"
+  }
+},
+{
+  "_id": "LQAOeZBdZ2k",
+  "title": "Saying Goodbye….",
+  "img": "https://i.ytimg.com/vi/LQAOeZBdZ2k/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBq73xpoXtXkIfxfW5sfwTAZYOmNg",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:51.544Z"
+  }
+},
+{
+  "_id": "TeQDr4DkLYo",
+  "title": "Why LLMs get dumb (Context Windows Explained)",
+  "img": "https://i.ytimg.com/vi/TeQDr4DkLYo/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBB8aDhmpHbZpBxhw8JzMPbz9G7YQ",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:51.544Z"
+  }
+},
+{
+  "_id": "cJZnlnT0rPA",
+  "title": "everyone is putting AI in schools......",
+  "img": "https://i.ytimg.com/vi/cJZnlnT0rPA/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAw-6HMLYv-XvE6PInAqyQyVm1NBQ",
+  "site": 0,
+  "cat": 0,
+  "created_at": {
+    "$date": "2025-04-26T17:00:51.544Z"
   }
 }]

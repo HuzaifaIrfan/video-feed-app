@@ -20,7 +20,7 @@ services:
       - mongodb
 
   mongodb:
-    container_name: mongodb-dev
+    container_name: mongodb--app-dev
     image: mongo:8-noble
     ports:
       - '27017:27017'
