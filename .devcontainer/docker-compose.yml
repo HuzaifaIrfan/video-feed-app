@@ -23,11 +23,12 @@ services:
   mongodb:
     container_name: mongodb-app-dev
     image: mongo:8-noble
+    restart: unless-stopped
+    
     ports:
       - '27017:27017'
     volumes:
       - mongodb:/data/db
-    restart: unless-stopped 
 
 volumes:
   mongodb:
