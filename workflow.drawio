@@ -1,33 +1,38 @@
 <mxfile host="65bd71144e">
     <diagram id="X7w_-tvGKJ5loYiccRqm" name="Page-1">
-        <mxGraphModel dx="1028" dy="637" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#FFFFFF" math="0" shadow="0">
+        <mxGraphModel dx="1058" dy="637" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#FFFFFF" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="42" value="Development (push to main branch)" style="swimlane;" parent="1" vertex="1">
-                    <mxGeometry x="130" y="200" width="420" height="200" as="geometry"/>
+                <mxCell id="42" value="Development" style="swimlane;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="190" width="510" height="200" as="geometry"/>
                 </mxCell>
                 <mxCell id="21" value="Github SCM" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.github_code;pointerEvents=1;labelBackgroundColor=none;" parent="42" vertex="1">
-                    <mxGeometry x="56" y="80" width="50" height="50" as="geometry"/>
+                    <mxGeometry x="38" y="80" width="50" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="44" style="edgeStyle=none;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="42" source="4" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="340" y="140" as="targetPoint"/>
+                <mxCell id="57" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="42" source="4" target="56" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="Code and Test" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="57">
+                    <mxGeometry x="0.0068" y="4" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="57" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="42" source="4" target="56">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
                 <mxCell id="4" value="Developer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontColor=default;labelBackgroundColor=none;" parent="42" vertex="1">
-                    <mxGeometry x="310" y="70" width="30" height="60" as="geometry"/>
+                    <mxGeometry x="440" y="75" width="30" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="56" value="Dev Container" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="42">
-                    <mxGeometry x="140" y="75" width="120" height="60" as="geometry"/>
+                <mxCell id="56" value="Dev Container" style="rounded=1;whiteSpace=wrap;html=1;" parent="42" vertex="1">
+                    <mxGeometry x="210" y="80" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="58" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="42" source="56" target="21">
+                <mxCell id="58" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="42" source="56" target="21" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="43" value="Testing (on pull request to prod branch)" style="swimlane;" parent="1" vertex="1">
+                <mxCell id="64" value="Push to&lt;div&gt;&quot;main&quot; Branch&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="58">
+                    <mxGeometry x="-0.0323" y="-2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="43" value="Testing" style="swimlane;" parent="1" vertex="1">
                     <mxGeometry x="120" y="440" width="365" height="320" as="geometry"/>
                 </mxCell>
                 <mxCell id="55" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="43" source="26" target="48" edge="1">
@@ -39,26 +44,41 @@
                 <mxCell id="48" value="Build and Test" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;fontColor=light-dark(#4277BB,#FFFFFF);labelBackgroundColor=default;fontSize=12;spacingTop=3;image=img/lib/ibm/devops/build_test.svg;" parent="43" vertex="1">
                     <mxGeometry x="60" y="200" width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="36" value="Delivery (on push/merge to prod branch)" style="swimlane;fillColor=default;labelBackgroundColor=light-dark(#FFFFFF,#000000);" parent="1" vertex="1">
+                <mxCell id="36" value="Delivery" style="swimlane;fillColor=default;labelBackgroundColor=light-dark(#FFFFFF,#000000);" parent="1" vertex="1">
                     <mxGeometry x="120" y="800" width="515" height="201" as="geometry"/>
                 </mxCell>
                 <mxCell id="23" value="Github Container Registry&lt;div&gt;(Built and Deliivered Packages)&lt;/div&gt;" style="editableCssRules=.*;html=1;shape=image;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnY9Imh0dHBzOi8vdmVjdGEuaW8vbmFubyIgd2lkdGg9IjM3Ny4xNTkzMDIxNjAyNjMwNSIgaGVpZ2h0PSIzMzYuMTYyNDk5MDAzMzEwOCIgdmlld0JveD0iLTAuMDU4MDAwMDA1NzgxNjUwNTQgMC4xMTI5OTk5OTgwMzMwNDY3MiA5OS43OTAwMDA5MTU1MjczNCA4OC45NDMwMDA3OTM0NTcwMyI+JiN4YTs8c3R5bGUgdHlwZT0idGV4dC9jc3MiPiYjeGE7CS5zdDB7ZmlsbDojNjY5ZGY2O30mI3hhOwkuc3Qxe2ZpbGw6I2FlY2JmYTt9JiN4YTsJLnN0MntmaWxsOiM0Mjg1ZjQ7fSYjeGE7PC9zdHlsZT4mI3hhOwk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNTMuMjQzIDYyLjA5VjQ3LjA5NGwxMy4yMDEgOC40MTZ2MTUuMDM4em0tMzMuMDIxIDBWNDcuMDk0bDEzLjIwMSA4LjQxNnYxNS4wMzh6bTE2LjUxMS0zMi4yODVWMTQuODFsMTMuMjAxIDguNDE2djE1LjAzOHptNjIuOTk5IDMzLjk2VjI1LjQwM2wtOS41NjItMS44ODR2NDIuMTMxem0tOTkuNzg4IDBWMjUuNDAzbDkuNTYyLTEuODg0djQyLjEzMXoiLz4mI3hhOwk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNNTMuMTg1IDQ3LjA5NGwxMy4yNTgtOC4yODcgMTMuMDE2IDguMjM0LTEzLjAxNiA4LjQ2OXptLTMzLjAyMSAwbDEzLjI1OC04LjI4NyAxMy4wMTYgOC4yMzQtMTMuMDE2IDguNDY5ek0zNi42NzUgMTQuODFsMTMuMjU4LTguMjg3IDEzLjAxNiA4LjIzNC0xMy4wMTYgOC40Njl6bTYzLjA1NiA0OC45NTZ2MTIuMjE3TDc3LjAxIDg5LjA1NVY3Ny43NTJ6bTAtMzguMzYzVjEzLjE4Nkw3Ny4wMS4xMTN2MTEuMzAzek0tLjA1OCA2My43NjZ2MTIuMjE3bDIyLjcyMSAxMy4wNzNWNzcuNzUyem0wLTM4LjM2M1YxMy4xODZMMjIuNjYzLjExM3YxMS4zMDN6Ii8+JiN4YTsJPHBhdGggY2xhc3M9InN0MiIgZD0iTTY2LjQ0NCA3MC41NDdWNTUuNTFsMTMuMDE2LTguNDY5djE1LjR6bS0zMy4wMjEgMFY1NS41MWwxMy4wMTYtOC40Njl2MTUuNHptMTYuNTExLTMyLjI4NVYyMy4yMjVsMTMuMDE2LTguNDY5djE1LjR6bTQ5Ljc5OCAyNS41MDNsLTkuNTYyIDUuODh2LTMuOTk2em0wLTM4LjM2M2wtOS41NjItNS44OHYzLjk5NnpNLS4wNTggNjMuNzY2bDkuNTYyIDUuODh2LTMuOTk2em0wLTM4LjM2M2w5LjU2Mi01Ljg4djMuOTk2eiIvPiYjeGE7PC9zdmc+;" parent="36" vertex="1">
                     <mxGeometry x="350" y="46.5" width="120" height="108" as="geometry"/>
                 </mxCell>
                 <mxCell id="46" value="Image" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.cloud_service_package_file;" parent="36" vertex="1">
-                    <mxGeometry x="210" y="90" width="42.5" height="50" as="geometry"/>
+                    <mxGeometry x="220" y="85" width="42.5" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="52" style="edgeStyle=none;html=1;entryX=0.039;entryY=0.576;entryDx=0;entryDy=0;entryPerimeter=0;" parent="36" source="46" target="23" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
+                <mxCell id="74" value="Deliver" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="52">
+                    <mxGeometry x="-0.3172" y="-3" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
                 <mxCell id="22" value="Continuous Delivery" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;fontColor=light-dark(#4277BB,#FFFFFF);labelBackgroundColor=none;fontSize=12;spacingTop=3;image=img/lib/ibm/devops/continuous_deploy.svg;" parent="36" vertex="1">
-                    <mxGeometry x="70" y="80" width="60" height="60" as="geometry"/>
+                    <mxGeometry x="60" y="85" width="60" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="51" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="36" source="22" target="46" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
+                <mxCell id="73" value="Build and Test" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="51">
+                    <mxGeometry x="-0.0981" y="2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
                 <mxCell id="30" style="edgeStyle=none;html=1;entryX=0.475;entryY=0.063;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="21" target="26" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" value="Create Pull Request to &quot;prod&quot; Branch" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="30">
+                    <mxGeometry x="0.0526" y="2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="34" value="Developer Workflow" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=32;labelBackgroundColor=none;" parent="1" vertex="1">
                     <mxGeometry x="225" y="68" width="310" height="50" as="geometry"/>
@@ -68,6 +88,11 @@
                 </mxCell>
                 <mxCell id="50" style="edgeStyle=none;html=1;" parent="1" source="48" target="22" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="On Merge/Push to &quot;prod&quot; Branch" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="50">
+                    <mxGeometry x="-0.1446" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
                 </mxCell>
             </root>
         </mxGraphModel>
